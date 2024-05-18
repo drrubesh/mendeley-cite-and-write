@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Checking and Merging Duplicates in Mendeley | Cite and Write using Mendeley</title>
+<meta name="author" content="Rubeshkumar Polani">
+<meta name="description" content="Most important challenge in any reference manager is duplicate entries in the library which could potentially confuses the user. Mendeley provides a useful feature to identify and merge these...">
+<meta name="generator" content="bookdown 0.37 with bs4_book()">
+<meta property="og:title" content="Checking and Merging Duplicates in Mendeley | Cite and Write using Mendeley">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Most important challenge in any reference manager is duplicate entries in the library which could potentially confuses the user. Mendeley provides a useful feature to identify and merge these...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Checking and Merging Duplicates in Mendeley | Cite and Write using Mendeley">
+<meta name="twitter:description" content="Most important challenge in any reference manager is duplicate entries in the library which could potentially confuses the user. Mendeley provides a useful feature to identify and merge these...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Cite and Write using Mendeley</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Cite and Write using Mendeley</a></li>
+<li><a class="" href="introduction-to-referencing.html">Introduction to Referencing</a></li>
+<li><a class="" href="installing-mendeley.html">Installing Mendeley</a></li>
+<li><a class="" href="creating-an-account-in-mendeley.html">Creating an Account in Mendeley</a></li>
+<li><a class="" href="troubleshooting-mendeley.html">Troubleshooting Mendeley</a></li>
+<li><a class="" href="mendeley-overview.html">Mendeley Overview</a></li>
+<li><a class="" href="adding-references-to-mendeley-library.html">Adding References to Mendeley Library</a></li>
+<li><a class="" href="in-text-citation-and-adding-bibliography-in-a-word-document.html">In-Text Citation and adding bibliography in a Word Document</a></li>
+<li><a class="" href="work-as-a-team.html">Work as a Team</a></li>
+<li><a class="active" href="checking-and-merging-duplicates-in-mendeley.html">Checking and Merging Duplicates in Mendeley</a></li>
+<li><a class="" href="exporting-references-from-mendeley.html">Exporting References from Mendeley</a></li>
+<li><a class="" href="importing-references-into-mendeley.html">Importing References into Mendeley</a></li>
+<li><a class="" href="using-mendeley-for-conducting-a-systematic-review.html">Using Mendeley for Conducting a Systematic Review</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/drrubesh/mendeley-cite-and-write.git">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="checking-and-merging-duplicates-in-mendeley" class="section level1 unnumbered">
+<h1>Checking and Merging Duplicates in Mendeley<a class="anchor" aria-label="anchor" href="#checking-and-merging-duplicates-in-mendeley"><i class="fas fa-link"></i></a>
+</h1>
+<p>Most important challenge in any reference manager is duplicate entries in the library which could potentially confuses the user. Mendeley provides a useful feature to identify and merge these duplicates, ensuring your library remains streamlined and accurate. This feature is useful in the initial steps of systematic review.</p>
+<div id="step-by-step-guide-to-managing-duplicates" class="section level2 unnumbered">
+<h2>Step-by-Step Guide to Managing Duplicates<a class="anchor" aria-label="anchor" href="#step-by-step-guide-to-managing-duplicates"><i class="fas fa-link"></i></a>
+</h2>
+<div id="step-1-access-the-duplicate-finder" class="section level3 unnumbered">
+<h3>Step 1: Access the Duplicate Finder<a class="anchor" aria-label="anchor" href="#step-1-access-the-duplicate-finder"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Open Mendeley Desktop</strong>: Start by launching the Mendeley Desktop application.</li>
+<li>
+<strong>Find Duplicates</strong>: Go to the <code>Tools</code> menu and select <code>Check for Duplicates</code>. This action prompts Mendeley to scan your library for any entries that appear to be duplicates.
+<img src="images/mendeley_tools_install.png" style="width:100.0%">
+</li>
+</ul>
+</div>
+<div id="step-2-reviewing-duplicates" class="section level3 unnumbered">
+<h3>Step 2: Reviewing Duplicates<a class="anchor" aria-label="anchor" href="#step-2-reviewing-duplicates"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Review List</strong>: Mendeley will display a list of potential duplicates. It’s important to review each set carefully to confirm whether they are indeed duplicates. Mendeley typically groups similar items based on title, authors, and publication year.</li>
+</ul>
+</div>
+<div id="step-3-merge-duplicates" class="section level3 unnumbered">
+<h3>Step 3: Merge Duplicates<a class="anchor" aria-label="anchor" href="#step-3-merge-duplicates"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Select References</strong>: For each group of duplicates, you can select the references that you want to merge. Mendeley allows you to compare the details side by side to choose which details to retain.</li>
+<li>
+<strong>Merge Entries</strong>: After selecting the desired references and confirming the details to keep, click the <code>Merge</code> button. This will combine the selected entries into a single reference entry in your library.</li>
+</ul>
+</div>
+<div id="step-4-confirm-changes" class="section level3 unnumbered">
+<h3>Step 4: Confirm Changes<a class="anchor" aria-label="anchor" href="#step-4-confirm-changes"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>
+<strong>Check Library</strong>: Once you merge the duplicates, review your library to ensure that the entries have been correctly merged and that no additional duplicates are present.</li>
+<li>
+<strong>Continuous Monitoring</strong>: Regularly checking for duplicates is good practice, especially after adding new references to your library.</li>
+</ul>
+</div>
+</div>
+<div id="tips-for-preventing-duplicates" class="section level2 unnumbered">
+<h2>Tips for Preventing Duplicates<a class="anchor" aria-label="anchor" href="#tips-for-preventing-duplicates"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Consistent Importing Practices</strong>: Always import references using consistent formats and from reliable sources to minimize variations that could lead to duplicates.</li>
+<li>
+<strong>Use DOI for Imports</strong>: When available, use the Digital Object Identifier (DOI) to import articles, as it helps in accurately identifying and retrieving the exact document without duplication.</li>
+</ul>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="work-as-a-team.html">Work as a Team</a></div>
+<div class="next"><a href="exporting-references-from-mendeley.html">Exporting References from Mendeley</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#checking-and-merging-duplicates-in-mendeley">Checking and Merging Duplicates in Mendeley</a></li>
+<li>
+<a class="nav-link" href="#step-by-step-guide-to-managing-duplicates">Step-by-Step Guide to Managing Duplicates</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#step-1-access-the-duplicate-finder">Step 1: Access the Duplicate Finder</a></li>
+<li><a class="nav-link" href="#step-2-reviewing-duplicates">Step 2: Reviewing Duplicates</a></li>
+<li><a class="nav-link" href="#step-3-merge-duplicates">Step 3: Merge Duplicates</a></li>
+<li><a class="nav-link" href="#step-4-confirm-changes">Step 4: Confirm Changes</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#tips-for-preventing-duplicates">Tips for Preventing Duplicates</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/drrubesh/mendeley-cite-and-write.git/blob/master/07-Work-as-a-team.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/drrubesh/mendeley-cite-and-write.git/edit/master/07-Work-as-a-team.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Cite and Write using Mendeley</strong>" was written by Rubeshkumar Polani. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
